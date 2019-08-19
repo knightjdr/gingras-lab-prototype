@@ -1,0 +1,22 @@
+{
+  "name": "gingras-lab",
+  "version": "1.0.0",
+  "description": "Gingras lab website",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knightjdr/gingras-lab.git"
+  },
+  "author": "James Knight",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/knightjdr/gingras-lab/issues"
+  },
+  "homepage": "https://github.com/knightjdr/gingras-lab#readme",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}
