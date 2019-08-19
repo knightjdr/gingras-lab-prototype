@@ -146,16 +146,25 @@ p {
 .home__news h2 {
   text-align: center;
 }
+.home__news time {
+  color: rgba(51, 51, 51, 0.8);
+}
 .home__news ul {
  list-style: none;
- padding-left: 0;
+ padding: 0 20px;
 }
 .home__news li {
+  margin: 50px 0;
+  padding: 10px 0;
+}
+.home__news li:not(:last-of-type) {
+  border-bottom: 1px solid;
+  border-color: rgba(51, 51, 51, 0.1);
+}
+.home__news-inner {
   background-color: #fff;
   border-radius: 3px;
   box-shadow: var(--boxShadow);
-  margin: 40px 0;
-  padding: 10px 20px;
 }
 
 .home__project {
