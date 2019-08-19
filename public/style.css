@@ -1,4 +1,5 @@
 body {
+  --boxShadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
   --fontDark: #333;
   background-color: #fff;
   color: var(--fontDark);
@@ -73,16 +74,17 @@ p {
 
 .home section {
   box-sizing: border-box;
-  padding: 50px 0;
+  margin-bottom: 50px;
+  max-width: 900px;
 }
 
 .home section.home__anne-claude {
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  box-shadow: var(--boxShadow);
   display: flex;
   justify-content: center;
-  max-width: 900px;
+  margin-top: 30px;
   padding: 35px 30px;
 }
 .home__anne-claude-about {
@@ -94,6 +96,10 @@ p {
 .home__anne-claude-links a:not(:last-child) {
   margin-right: 10px;
 }
+.home__anne-claude img {
+  min-height: 268px;
+  min-width: 200px;
+}
 
 .home__landing {
   align-items: center;
@@ -101,15 +107,17 @@ p {
   grid-template-columns: 25% 25% 50%;
   grid-template-rows: auto;
   height: 60vh;
-  margin-bottom: 65px;
   min-height: 500px;
   overflow: hidden;
+}
+.home section.home__landing {
+  max-width: 1300px;
   width: 100%;
 }
 .home__landing-description {
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  box-shadow: var(--boxShadow);
   grid-column: 1 / 3;
   grid-row: 1;
   justify-self: center;
@@ -132,11 +140,29 @@ p {
   font-size: 1.1em;
 }
 
+.home__news {
+  margin-top: 20px;
+}
+.home__news h2 {
+  text-align: center;
+}
+.home__news ul {
+ list-style: none;
+ padding-left: 0;
+}
+.home__news li {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: var(--boxShadow);
+  margin: 40px 0;
+  padding: 10px 20px;
+}
+
 .home__project {
   align-items: center;
   background-color: #fff;
   border-radius: 3px;
-  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  box-shadow: var(--boxShadow);
   display: flex;
   margin: 30px 0;
   padding: 10px;
@@ -148,8 +174,6 @@ p {
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
-  max-width: 900px;
 }
 .home__projects .fa-primary {
   fill: #12c2e9;
