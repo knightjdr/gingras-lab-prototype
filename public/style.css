@@ -12,10 +12,12 @@ body {
 a {
   text-decoration: none;
 }
-a:focus {
+a:focus,
+button:focus {
   outline: none;
 }
-a::-moz-focus-inner {
+a::-moz-focus-inner,
+button::-moz-focus-inner {
   border: none;
 }
 a:link {
@@ -224,8 +226,50 @@ p {
   margin-left: 8px;
   padding-left: 8px;
 }
+.navbar__menu {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .3);
+  list-style: none;
+  margin: 0;
+  opacity: 0;
+  padding: 5px 8px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(0);
+  transform-origin: top right;
+  transition: 0.2s all ease;
+}
+.navbar__menu a:visited {
+  color: #2468e5;
+}
+.navbar__menu-button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  position: relative;
+  right: 5px;
+  top: 5px;
+}
+.navbar__menu-button svg {
+  fill: var(--fontDark);
+  transition: 0.3s fill ease;
+}
+.navbar__menu-button:focus svg,
+.navbar__menu-button:hover svg {
+  fill: #5C6BC0;
+}
+.navbar__menu-container {
+  display: none;
+}
+.navbar__menu.open {
+  opacity: 1;
+  transform: scale(1);
+}
 .navbar__right {
   margin-left: auto;
+  position: relative;
 }
 .navbar__left a {
   color: var(--fontDark);
@@ -237,10 +281,24 @@ p {
   color: #5C6BC0;
 }
 .navbar__right a {
+  align-items: center;
+  display: flex;
   fill: var(--fontDark);
   text-decoration: none;
 }
 .navbar__right a:focus,
 .navbar__right a:hover {
   fill: #5C6BC0;
+}
+
+@media (max-width: 749px) {
+  .navbar__links {
+    display: none;
+  }
+  .navbar__menu-container {
+    display: inline;
+  }
+  .navbar__right > a {
+    display: none;
+  }
 }
