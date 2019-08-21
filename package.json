@@ -4,7 +4,9 @@
   "description": "Gingras lab website",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d build"
+    "build": "NODE_ENV=development gulp build",
+    "deploy": "gh-pages -d build",
+    "production": "NODE_ENV=production gulp build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,21 @@
   },
   "homepage": "https://github.com/knightjdr/gingras-lab#readme",
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "autoprefixer": "^9.6.1",
+    "del": "^5.0.0",
+    "gh-pages": "^2.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "nanoid": "^2.0.3"
   }
 }
