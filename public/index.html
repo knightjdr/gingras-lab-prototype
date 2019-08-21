@@ -23,7 +23,6 @@
     <script src="bundle.js" defer></script>
   </head>
   <body>
-    <div class="home__waves"></div>
     <nav class="navbar">
       <span class="navbar__left">
         <a class="navbar__home" href="./">Gingras lab</a>
@@ -99,26 +98,41 @@
               assets/images/toronto2x.jpg 2x,
               assets/images/toronto3x.jpg 3x
             "
-          type="image/jpeg"> 
+            type="image/jpeg"
+          > 
           <img
             alt="View of Toronto skyline from Toronto island"
+            height="400"
             src="assets/images/toronto3x.jpg"
             width="800"
           >
         </picture>
       </section>
       <section class="home__anne-claude">
-        <img
-          alt="Anne-Claude Gingras"
-          height="268"
-          src="assets/images/people/AnneClaudeGingras-home.png"
-          srcSet="
-            assets/images/people/AnneClaudeGingras-home.png 1x,
-            assets/images/people/AnneClaudeGingras2x-home.png 2x,
-            assets/images/people/AnneClaudeGingras3x-home.png 3x
-          "
-          width="200"
-        />
+        <picture>
+          <source
+            srcset="
+              assets/images/people/anneclaude-gingras-home1x.webp 1x,
+              assets/images/people/anneclaude-gingras-home2x.webp 2x,
+              assets/images/people/anneclaude-gingras-home3x.webp 3x
+            "
+            type="image/webp"
+          >
+          <source
+            srcset="
+              assets/images/people/anneclaude-gingras-home1x.jpg 1x,
+              assets/images/people/anneclaude-gingras-home2x.jpg 2x,
+              assets/images/people/anneclaude-gingras-home3x.jpg 3x
+            "
+            type="image/jpeg"
+          > 
+          <img
+            alt="Anne-Claude Gingras"
+            height="268"
+            src="assets/images/people/anneclaude-gingras-home3x.jpg"
+            width="200"
+          />
+        </picture>
         <div class="home__anne-claude-about">
           <h2>Dr. Anne-Claude Gingras</h2>
           <p>
@@ -246,5 +260,6 @@
       </div>
       <small>© 2019 Gingras lab.</small>
     </footer>
+    <div class="home__waves"></div>
   </body>
 </html>

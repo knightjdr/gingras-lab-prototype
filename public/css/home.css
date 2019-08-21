@@ -131,10 +131,32 @@
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
+  left: 0;
   opacity: 0.6;
   overflow: visible;
   pointer-events: none;
   position: absolute;
+  top: 0;
   width: 20%;
   z-index: -1;
+}
+
+@media (max-width: 649px) {
+  .home section.home__anne-claude {
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 20px;
+  }
+  .home__anne-claude-about {
+    margin-left: 0;
+  }
+  .home__project {
+    flex-direction: column;
+  }
+  .home__projects > .home__project:nth-of-type(odd) {
+    flex-direction: column-reverse;
+  }
+  .home__waves {
+    display: none;
+  }
 }
