@@ -1,15 +1,15 @@
-const isVisible = (element) => {
+const isVisible = function (element) {
   if (!element) {
     return false;
   }
   const rect = element.getBoundingClientRect();
   return Boolean(
     window.getComputedStyle(element).getPropertyValue('opacity') > 0
-    && (rect.height || rect.width),
+    && (rect.height || rect.width)
   );
 };
 
-const clickListener = (e) => {
+const clickListener = function (e) {
   const element = document.querySelector('.navbar__menu');
   const outside = !element.contains(e.target) && isVisible(element);
   if (outside) {
@@ -18,7 +18,7 @@ const clickListener = (e) => {
   }
 };
 
-const escListener = (e) => {
+const escListener = function (e) {
   const element = document.querySelector('.navbar__menu');
   if (e.key === 'Escape' && isVisible(element)) {
     removeListeners();
@@ -26,17 +26,17 @@ const escListener = (e) => {
   }
 };
 
-const addListeners = () => {
+const addListeners = function () {
   window.addEventListener('click', clickListener);
   window.addEventListener('keydown', escListener);
-}
+};
 
-const removeListeners = () => {
+const removeListeners = function () {
   window.removeEventListener('click', clickListener);
   window.removeEventListener('keydown', escListener);
-}
+};
 
-document.querySelector('.navbar__menu-button').addEventListener('click', () => {
+document.querySelector('.navbar__menu-button').addEventListener('click', function () {
   const menu = document.querySelector('.navbar__menu');
   if (menu.classList.contains('open')) {
     removeListeners();
