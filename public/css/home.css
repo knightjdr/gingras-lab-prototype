@@ -66,6 +66,8 @@
 }
 .home__landing img {
   border-radius: 3px;
+}
+.home__landing picture {
   grid-column: 2 / 4;
   grid-row: 1;
   justify-self: end;

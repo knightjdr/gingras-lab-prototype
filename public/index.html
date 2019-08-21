@@ -84,11 +84,28 @@
             located at the Lunenfeld-Tanenbaum Research Institute (LTRI) in Toronto.
           </p>
         </div>
-        <img
-          alt="View of Toronto skyline from Toronto island"
-          src="assets/images/toronto.jpg"
-          width="800"
-        />
+        <picture>
+          <source
+            srcset="
+              assets/images/toronto1x.webp 1x,
+              assets/images/toronto2x.webp 2x,
+              assets/images/toronto3x.webp 3x
+            "
+            type="image/webp"
+          >
+          <source
+            srcset="
+              assets/images/toronto1x.jpg 1x,
+              assets/images/toronto2x.jpg 2x,
+              assets/images/toronto3x.jpg 3x
+            "
+          type="image/jpeg"> 
+          <img
+            alt="View of Toronto skyline from Toronto island"
+            src="assets/images/toronto3x.jpg"
+            width="800"
+          >
+        </picture>
       </section>
       <section class="home__anne-claude">
         <img
