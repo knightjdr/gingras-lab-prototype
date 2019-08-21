@@ -5,7 +5,7 @@ const isVisible = (element) => {
   const rect = element.getBoundingClientRect();
   return Boolean(
     window.getComputedStyle(element).getPropertyValue('opacity') > 0
-    && (rect.height || rect.width)
+    && (rect.height || rect.width),
   );
 };
 
