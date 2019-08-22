@@ -39,7 +39,7 @@ const html = async (baseURL, buildID) => (
       process.env.NODE_ENV === 'production',
       replace(/<meta name="robots" content="noindex,nofollow">/, ''),
     ))
-    .pipe(replace(/href="css\/([a-z]+).css"/g, `href="css/$1.${buildID}.css"`))
+    .pipe(replace(/href="css\/([a-z0-9]+).css"/g, `href="css/$1.${buildID}.css"`))
     .pipe(replace(/src="bundle.js"/, `src="bundle.${buildID}.js"`))
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(dest('build'))
