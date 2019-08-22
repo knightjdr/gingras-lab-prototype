@@ -7,7 +7,7 @@ const convert = async (file, quality) => {
   const { name } = path.parse(file);
   const image = await jimp.read(file);
   image.quality(quality);
-  await image.writeAsync(`./processed/${name}.jpeg`);
+  await image.writeAsync(`./processed/${name}.jpg`);
 };
 
 const reduceJPG = async (quality) => {
