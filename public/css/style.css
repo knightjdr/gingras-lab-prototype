@@ -29,6 +29,9 @@ a:link {
 a:visited {
   color: #551A8B;
 }
+a.nav-link:visited {
+  color: #2468e5;
+}
 a:hover,
 a:focus,
 a:active {
@@ -129,9 +132,6 @@ main {
   transform-origin: top right;
   transition: 0.2s all ease;
   white-space: nowrap;
-}
-.navbar__menu a:visited {
-  color: #2468e5;
 }
 .navbar__menu-button {
   background-color: transparent;
