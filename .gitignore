@@ -91,3 +91,4 @@ typings/
 build/
 src/images/processed/
 src/images/scaled/
+src/publications/output/

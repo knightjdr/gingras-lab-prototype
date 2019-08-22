@@ -40,10 +40,6 @@ main {
   padding: 10px 20px;
 }
 
-p {
-  text-align: justify;
-}
-
 .fa-secondary {
   opacity: .4;
 }
@@ -156,7 +152,7 @@ p {
   fill: #5C6BC0;
 }
 
-@media (max-width: 749px) {
+@media (max-width: 775px) {
   .navbar__links {
     display: none;
   }
