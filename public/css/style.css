@@ -1,6 +1,9 @@
 body {
   --boxShadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
   --fontDark: #333;
+  --fontLight: #fdfdfd;
+  --primaryColor: #f64f59;
+  --secondaryColor: #12c2e9;
   background-color: #fff;
   color: var(--fontDark);
   font-family: 'Lato', sans-serif;
