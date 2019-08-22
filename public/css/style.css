@@ -63,6 +63,28 @@ main {
   margin: 5px;
 }
 
+.main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.main header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 20px;
+}
+.main header img {
+  margin-left: 15px;
+}
+.main h2 {
+  font-size: 1.2em;
+}
+.main section {
+  margin: 30px 0;
+  max-width: 900px;
+  width: calc(100vw - 40px);
+}
+
 .navbar {
   align-items: center;
   box-sizing: border-box;
@@ -103,6 +125,7 @@ main {
   transform: scale(0);
   transform-origin: top right;
   transition: 0.2s all ease;
+  white-space: nowrap;
 }
 .navbar__menu a:visited {
   color: #2468e5;
@@ -160,6 +183,12 @@ main {
     display: inline;
   }
   .navbar__right > a {
+    display: none;
+  }
+}
+
+@media (max-width: 399px) {
+  .main header img {
     display: none;
   }
 }
