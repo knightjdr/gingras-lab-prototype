@@ -76,6 +76,30 @@
     </nav>
     <main class="home">
       <section class="home__landing">
+        <picture class="home__landing-skyline">
+          <source
+            srcset="
+              assets/images/toronto-skyline1x.webp 1x,
+              assets/images/toronto-skyline2x.webp 2x,
+              assets/images/toronto-skyline3x.webp 3x
+            "
+            type="image/webp"
+          >
+          <source
+            srcset="
+              assets/images/toronto-skyline1x.jpg 1x,
+              assets/images/toronto-skyline2x.jpg 2x,
+              assets/images/toronto-skyline3x.jpg 3x
+            "
+            type="image/jpeg"
+          > 
+          <img
+            alt="View of Toronto skyline"
+            height="250"
+            src="assets/images/toronto-skyline.jpg"
+            width="1000"
+          >
+        </picture>
         <div class="home__landing-description">
           <h1>Gingras laboratory</h1>
           <p>
@@ -83,7 +107,7 @@
             located at the Lunenfeld-Tanenbaum Research Institute (LTRI) in Toronto.
           </p>
         </div>
-        <picture>
+        <picture class="home__landing-island">
           <source
             srcset="
               assets/images/toronto1x.webp 1x,
