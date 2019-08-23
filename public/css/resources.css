@@ -1,8 +1,38 @@
+.resources h2 {
+  font-size: 1.3em;
+}
+.resources h3 {
+  font-size: 1.1em;
+}
+
+.resources ul {
+  list-style: none;
+  padding-left: 0;
+}
+.resources ul li:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
 .resources__links {
   margin-bottom: 30px;
 }
 .resources__links > a {
   margin-right: 10px;
+}
+
+.resources__list-links {
+  margin-left: 20px;
+}
+.resources__list-links a {
+  display: block;
+}
+
+.resources__resource:not(:last-of-type) {
+  border-bottom: 1px solid;
+  border-color: rgba(51, 51, 51, 0.1);
+}
+.resources__resource header {
+  margin-bottom: 0;
 }
 
 .navbar {

@@ -74,7 +74,7 @@
         </span>
       </span>
     </nav>
-    <main class="main resource">
+    <main class="main resources">
       <section>
         <header>
           <h1>
@@ -92,10 +92,107 @@
           <a class="nav-link" href="resources/#reagents">Reagents</a>
           <a class="nav-link" href="resources/#data">Data</a>
         </div>
-        <h2 id="software">Software</h2>
-        <h2 id="protocols">Protocols</h2>
-        <h2 id="reagents">Reagents</h2>
-        <h2 id="data">Data</h2>
+        <section class="resources__resource">
+          <header>
+            <h2 id="software">Software</h2>
+            <img
+              alt="Floppy disk"
+              height="20"
+              src="assets/images/save.svg"
+            />
+          </header>
+          <ul>
+            <li>
+              <h3>ProHits-viz</h2>
+              <p>
+                James Knight developed interactive analysis visualization tools for interaction
+                proteomics that enable organizing bait-prey data as heatmaps or dotplots,
+                quantitatively comparing two baits, calculating the specificity of preys across
+                baits jointly analyzed, and analyzing the prey-prey relationships (a feature that
+                is most useful for proximity biotinylation studies). With a simple text-based input
+                compatible with SAINT or CRAPome outputs, this web-based resource should facilitate
+                interaction proteomics analysis and visualization.
+              </p>
+              <div class="resources__list-links">
+                <a href="https://prohits-viz.lunenfeld.ca">ProHits-viz</a>
+                <a href="https://www.nature.com/articles/nmeth.4330">Publication</a>
+              </div>
+            </li>
+            <li>
+              <h3>ProHits 4.0: Ready for DIA analysis</h2>
+              <p>
+                Guomin (Frank Liu) and colleagues in the Gingras,
+                <a href="https://www.nesvilab.org/">Nesvizhskii</a>,
+                <a href="https://cseweb.ucsd.edu/~nbandeir/">Bandeira</a>,
+                <a href="https://www.cssblab.org/">Choi</a>,
+                <a href="https://www.iric.ca/en/research/principal-investigators/michael-tyers/">Tyers</a>
+                and
+                <a href="http://www.raughtlab.ca/homev2.php">Raught</a>
+                labs release a major update to the ProHits LIMS. In ProHits 4.0, Data Independent Acquisition (DIA)
+                is handled through
+                <a href="https://diaumpire.sourceforge.net/">DIA-Umpire</a>,
+                <a href="http://proteomics.ucsd.edu/software-tools/msplit-dia//">MSPLIT-DIA</a>,
+                <a href=" http://mapdia.sourceforge.net/Main.html">mapDIA</a>
+                and
+                <a href=" http://saint-apms.sourceforge.net/Main.html">SAINT-intensity</a>.
+                ProHits 4.0 also facilitates data deposition in public repositories such as MassIVE and the
+                transfer of data to new visualization tools we have developed.
+              </p>
+              <div class="resources__list-links">
+                <a href="http://prohitsms.com/Prohits_download/list.php">ProHits</a>
+                <a href="https://www.sciencedirect.com/science/article/pii/S1874391916301749?via%3Dihub">Publication</a>
+              </div>
+            </li>
+            <li>
+              <h3>DIA-Umpire: Integrated solution for Data Independent Acquisition</h2>
+              <p>
+                Chih-Chiang Tsou from the
+                <a href="https://www.nesvilab.org/">Nesvizhskii lab</a>
+                developed in collaboration with the Gingras lab DIA-Umpire, an integrated platform
+                for untargeted and semi-targeted identification and quantification from Data Independent
+                Acquisition. DIA-Umpire works on the basis of demultiplexing complex spectra through
+                retention time alignment of MS1 and MS2 peaks and generation of pseudo-MS/MS spectra that
+                can be searched using standard tools developed for shotgun proteomics. DIA-Umpire is
+                integrated in the next public release of ProHits, in addition to being available as a
+                stand-alone tool.
+              </p>
+              <div class="resources__list-links">
+                <a href="http://diaumpire.sourceforge.net">DIA-Umpire</a>
+                <a href="https://www.nature.com/nmeth/journal/v12/n3/full/nmeth.3255.html">Publication</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="resources__resource">
+          <header>
+            <h2 id="protocols">Protocols</h2>
+            <img
+              alt="File"
+              height="20"
+              src="assets/images/file-alt.svg"
+            />
+          </header>
+        </section>
+        <section class="resources__resource">
+          <header>
+            <h2 id="reagents">Reagents</h2>
+            <img
+              alt="Flask"
+              height="20"
+              src="assets/images/flask.svg"
+            />
+          </header>
+        </section class="resources__resource">
+        <section class="resources__resource">
+          <header>
+            <h2 id="data">Data</h2>
+            <img
+              alt="Database server"
+              height="20"
+              src="assets/images/database.svg"
+            />
+          </header>
+        </section>
       </section>
     </main>
     <footer class="footer-nav">
