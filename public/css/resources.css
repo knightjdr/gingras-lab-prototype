@@ -5,11 +5,11 @@
   font-size: 1.1em;
 }
 
-.resources ul {
+.resources__resource > ul {
   list-style: none;
   padding-left: 0;
 }
-.resources ul li:not(:last-of-type) {
+.resources__resource > ul > li:not(:last-of-type) {
   margin-bottom: 30px;
 }
 
@@ -18,13 +18,6 @@
 }
 .resources__links > a {
   margin-right: 10px;
-}
-
-.resources__list-links {
-  margin-left: 20px;
-}
-.resources__list-links a {
-  display: block;
 }
 
 .resources__resource:not(:last-of-type) {
