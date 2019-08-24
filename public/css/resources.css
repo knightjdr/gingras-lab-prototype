@@ -22,11 +22,7 @@
   display: flex;
 }
 .resources__resource-description picture {
-  margin-left: 10px;
-}
-.resources__resource-description img {
-  height: auto;
-  min-width: 400px;
+  margin-left: 15px;
 }
 
 .resources__links {
@@ -37,7 +33,7 @@
 }
 
 .resources__resource:not(:last-of-type) {
-  border-bottom: 2px solid rgba(51, 51, 51, 0.3);
+  border-bottom: 2px solid rgba(51, 51, 51, 0.1);
 }
 .resources__resource header {
   margin-bottom: 0;
@@ -48,7 +44,7 @@
 }
 
 @media (max-width: 849px) {
-  .resources__resource-description picture {
+  .resources picture {
     display: none;
   }
 }
