@@ -6,6 +6,10 @@
   color: var(--accentColor);
 }
 
+.news__years > a:not(:last-of-type) {
+  margin-right: 10px;
+}
+
 .news__list {
   list-style: none;
   padding-left: 0;
