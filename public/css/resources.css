@@ -2,7 +2,7 @@
   font-size: 1.3em;
 }
 .resources h3 {
-  color: #418545;
+  color: var(--accentColor);
   font-size: 1.1em;
 }
 

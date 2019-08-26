@@ -2,6 +2,10 @@
   margin-top: 40px;
 }
 
+.news__articles h3 {
+  color: var(--accentColor);
+}
+
 .news__list {
   list-style: none;
   padding-left: 0;
