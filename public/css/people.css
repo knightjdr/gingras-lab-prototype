@@ -40,6 +40,23 @@
   font-size: 0.9em;
 }
 
+.people__photos {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.people__photos figure {
+  margin: 30px 0;
+}
+.people__photos figcaption {
+  text-align: center;
+}
+.people__photos img {
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
 .navbar {
   box-shadow: var(--boxShadow);
 }
