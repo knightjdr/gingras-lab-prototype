@@ -1,5 +1,7 @@
 # Gingras lab website
 
+Deprecated for [gingras-lab-gatsby](https://github.com/knightjdr/gingras-lab-gatsby).
+
 ## Build for deploying on GitHub
 
 ```
