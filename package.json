@@ -1,5 +1,5 @@
 {
-  "name": "gingras-lab",
+  "name": "gingras-lab-prototype",
   "version": "1.0.0",
   "description": "Gingras lab website",
   "main": "index.js",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/knightjdr/gingras-lab.git"
+    "url": "git+https://github.com/knightjdr/gingras-lab-prototype.git"
   },
   "author": "James Knight",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/knightjdr/gingras-lab/issues"
+    "url": "https://github.com/knightjdr/gingras-lab-prototype/issues"
   },
-  "homepage": "https://github.com/knightjdr/gingras-lab#readme",
+  "homepage": "https://github.com/knightjdr/gingras-lab-prototype#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
